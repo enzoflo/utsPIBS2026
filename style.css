@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    background-color: #EFE8E4;
+    color: #2E2325;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #FBF8F5;
+    border: 1px solid #CFC3BE;
+    overflow: hidden;          /* membungkus elemen yang float */
+}
+
+/* ============ HEADER ============ */
+.header {
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #E6DCD6;
+    border-bottom: 2px solid #800020;
+}
+
+.foto {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.judul h1 {
+    margin: 0 0 6px;
+    color: #2E2325;
+    font-size: 26px;
+}
+
+.judul p {
+    margin: 0;
+    color: #6B5A5C;
+    font-size: 14px;
+}
+
+/* ============ NAVIGASI ============ */
+.nav {
+    float: left;
+    width: 25%;
+    min-height: 380px;
+    padding: 15px;
+    background-color: #F3EDE9;
+    border-right: 1px solid #CFC3BE;
+}
+
+.nav h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    color: #800020;
+    font-size: 13px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #CFC3BE;
+}
+
+.nav p {
+    margin: 2px 0;
+    padding: 9px 4px;
+    cursor: pointer;
+    color: #2E2325;
+    border-bottom: 1px dotted #D8CEC9;
+}
+
+.nav p:hover {
+    color: #800020;
+    text-decoration: underline;
+}
+
+/* ============ KONTEN ============ */
+.content-area {
+    float: left;
+    width: 75%;
+    padding: 10px;
+}
+
+.section {
+    float: left;
+    width: calc(66.67% - 5px);
+    margin-right: 10px;
+    min-height: 380px;
+    padding: 25px;
+    background-color: #FBF8F5;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #800020;
+    font-size: 24px;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.deskripsi {
+    color: #8A7B7C;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.section hr,
+.aside hr {
+    margin: 16px 0;
+    border: 0;
+    border-top: 1px solid #DDD3CE;
+}
+
+.item {
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px dotted #CFC3BE;
+}
+
+.item h3 {
+    margin: 0 0 4px;
+    color: #2E2325;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item p {
+    margin: 0;
+}
+
+.aside {
+    float: left;
+    width: calc(33.33% - 5px);
+    min-height: 380px;
+    padding: 15px;
+    background-color: #F3EDE9;
+    border-left: 1px solid #CFC3BE;
+    overflow-wrap: anywhere;
+}
+
+.aside h3 {
+    color: #800020;
+    font-size: 16px;
+}
+
+.aside li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.aside p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+    clear: both;
+    min-height: 85px;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #E6DCD6;
+    border-top: 1px solid #CFC3BE;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 4px 0;
+}
+
+.footer-social {
+    width: 25%;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.footer-copyright {
+    width: 30%;
+}
+
+.footer-info {
+    width: 25%;
+    text-align: right;
+}
+
+.footer-info h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #800020;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+/* ============ TABLET (max 1024px) ============*/
+@media screen and (max-width: 1024px) {
+    .content-area {
+        display: contents;
+    }
+
+    .section {
+        width: calc(75% - 20px);
+        margin: 10px;
+    }
+
+    .aside {
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+/* ============ SMARTPHONE (max 430px) ============*/
+@media screen and (max-width: 430px) {
+    body {
+        padding: 5px;
+    }
+
+    .header {
+        height: auto;
+        min-height: 100px;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .foto {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        font-size: 18px;
+    }
+
+    .judul h1 {
+        font-size: 19px;
+    }
+
+    .judul p {
+        font-size: 12px;
+    }
+
+    .nav {
+        width: 100%;
+        min-height: auto;
+        border-right: 0;
+    }
+
+    .nav p {
+        display: inline-block;
+        padding: 8px;
+        font-size: 13px;
+        border-bottom: 0;
+    }
+
+    .section,
+    .aside {
+        width: calc(100% - 20px);
+        margin: 10px;
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .aside {
+        border-left: 0;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 5px;
+        font-size: 12px;
+    }
+
+    .footer-social,
+    .footer-copyright,
+    .footer-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-info h3 {
+        font-size: 16px;
+    }
+}
