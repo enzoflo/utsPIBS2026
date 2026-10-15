@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="profile header">
+            <div class="foto"><img src="aquila.jpeg" alt="Foto Profil"></div>
+
+            <div class="judul">
+                <h1>Profil Mahasiswa</h1>
+                <p>Selamat datang di halaman profil saya.</p>
+            </div>
+        </header>
+
+        <!-- NAVIGASI -->
+        <nav class="profile nav">
+            <h3>MENU</h3>
+
+            <p onclick="tampilSection('biodata')">Biodata</p>
+            <p onclick="tampilSection('pendidikan')">Pendidikan</p>
+            <p onclick="tampilSection('pengalaman')">Pengalaman</p>
+            <p onclick="tampilSection('keahlian')">Keahlian</p>
+            <p onclick="tampilSection('publikasi')">Publikasi</p>
+        </nav>
+
+        <!-- KONTEN UTAMA -->
+        <main class="content-area">
+
+            <!-- SECTION BIODATA -->
+            <section id="biodata" class="profile section">
+                <h2>Biodata</h2>
+                <p class="deskripsi">Informasi pribadi mahasiswa.</p>
+                <hr>
+
+                <p><b>NIM:</b> 2025081011</p>
+                <p><b>Nama:</b> Aquila Raskha Malika</p>
+                <p><b>Agama:</b> Islam</p>
+                <p><b>Tanggal Lahir:</b> 14 Februari 2006</p>
+                <p><b>Tempat Lahir:</b> Jakarta</p>
+                <p><b>Status:</b> Mahasiswa</p>
+                <p><b>Hobi:</b> Musik dan Pemrograman</p>
+            </section>
+
+            <!-- ASIDE BIODATA -->
+            <aside id="aside-biodata" class="profile aside">
+                <h3>Informasi Biodata</h3>
+                <p><b>Film Favorit</b></p>
+                <ul>
+                    <li>The Godfather</li>
+                    <li>The Taste of Tea</li>
+                    <li>Kejarlah Daku... Kau Kutangkap</li>
+                </ul>
+            </aside>
+
+            <!-- SECTION PENDIDIKAN -->
+            <section id="pendidikan" class="profile section"
+                     style="display: none;">
+                <h2>Pendidikan</h2>
+                <p class="deskripsi">Riwayat pendidikan saya.</p>
+                <hr>
+
+                <div class="item">
+                    <h3>Sekolah Dasar</h3>
+                    <p>SDI At-Taqwa - Pamulang</p>
+                </div>
+
+                <div class="item">
+                    <h3>Sekolah Menengah Pertama</h3>
+                    <p>Ibnu Taimiyah Boarding School - Bogor</p>
+                </div>
+
+                <div class="item">
+                    <h3>Sekolah Menengah Atas</h3>
+                    <p>Ibnu Taimiyah Boarding School - Bogor</p>
+                </div>
+
+                <div class="item">
+                    <h3>Perguruan Tinggi</h3>
+                    <p>Universitas Pembangunan Jaya - Program Studi Sistem Informasi</p>
+                </div>
+            </section>
+
+            <!-- ASIDE PENDIDIKAN -->
+            <aside id="aside-pendidikan" class="profile aside"
+                   style="display: none;">
+                <h3>Informasi Pendidikan</h3>
+                <p><b>Fokus</b></p>
+                <ul>
+                    <li>Akademik</li>
+                    <li>Pengembangan ilmu</li>
+                    <li>Belajar mandiri</li>
+                </ul>
+            </aside>
+
+            <!-- SECTION PENGALAMAN -->
+            <section id="pengalaman" class="profile section"
+                     style="display: none;">
+                <h2>Pengalaman</h2>
+                <p class="deskripsi">Kegiatan dan pengalaman saya.</p>
+                <hr>
+
+                <div class="item">
+                    <h3>Magang di Sekolah Islam (2024-2025)</h3>
+                    <p>Mengajar murid-murid di sekolah Islam dan membantu dalam manajemen sekolah.</p>
+                </div>
+
+                <div class="item">
+                    <h3>Proyek Akademik</h3>
+                    <p>Mengerjakan tugas dan proyek bersama kelompok.</p>
+                </div>
+            </section>
+
+            <!-- ASIDE PENGALAMAN -->
+            <aside id="aside-pengalaman" class="profile aside"
+                   style="display: none;">
+            </aside>
+
+            <!-- SECTION KEAHLIAN -->
+            <section id="keahlian" class="profile section"
+                     style="display: none;">
+                <h2>Keahlian</h2>
+                <p class="deskripsi">Kemampuan yang sedang saya pelajari.</p>
+                <hr>
+
+                <div class="item">
+                    <h3>HTML</h3>
+                    <p>Membuat struktur halaman website.</p>
+                </div>
+
+                <div class="item">
+                    <h3>CSS</h3>
+                    <p>Mengatur desain, warna, dan layout website.</p>
+                </div>
+
+                <div class="item">
+                    <h3>English</h3>
+                    <p>Membaca dan menulis dalam bahasa Inggris.</p>
+                </div>
+            </section>
+
+            <!-- ASIDE KEAHLIAN -->
+            <aside id="aside-keahlian" class="profile aside"
+                   style="display: none;">
+                <h3>Bidang Keahlian</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Bahasa</li>
+                </ul>
+
+                <hr>
+                <p><b>Fokus:</b> Pengembangan website.</p>
+            </aside>
+
+            <!-- SECTION PUBLIKASI -->
+            <section id="publikasi" class="profile section"
+                     style="display: none;">
+                <h2>Publikasi</h2>
+                <p class="deskripsi">Daftar karya dan publikasi.</p>
+                <hr>
+
+            </section>
+
+            <!-- ASIDE PUBLIKASI -->
+            <aside id="aside-publikasi" class="profile aside"
+                   style="display: none;">
+            </aside>
+
+        </main>
+
+        <!-- FOOTER -->
+        
+        <footer class="footer">
+            <div class="footer-social">
+                <p>Instagram: @raskhamalika</p>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© Copyright 2026. All Rights Reserved</p>
+            </div>
+
+            <div class="footer-info">
+                <h3>Raskha's Portfolio</h3>
+                <p>tetap hebat tetap gokil</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script>     
+    function tampilSection(menu) {
+        document.getElementById('biodata').style.display = 'none';
+        document.getElementById('aside-biodata').style.display = 'none';
+
+        document.getElementById('pendidikan').style.display = 'none';
+        document.getElementById('aside-pendidikan').style.display = 'none';
+
+        document.getElementById('pengalaman').style.display = 'none';
+        document.getElementById('aside-pengalaman').style.display = 'none';
+
+        document.getElementById('keahlian').style.display = 'none';
+        document.getElementById('aside-keahlian').style.display = 'none';
+
+        document.getElementById('publikasi').style.display = 'none';
+        document.getElementById('aside-publikasi').style.display = 'none';
+
+        document.getElementById(menu).style.display = 'block';
+        document.getElementById('aside-' + menu).style.display = 'block';
+}
+
+    </script>
+
+</body>
+</html>
